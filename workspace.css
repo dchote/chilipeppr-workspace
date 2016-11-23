@@ -86,16 +86,18 @@
 .nopadding {
     padding:0;
 }
+
+#com-chilipeppr-3dviewer {
+	margin-right: 10px;
+}
+
 #com-chilipeppr-widget-3dviewer .panel-heading, #com-chilipeppr-3dviewer-controlpanel .panel-heading {
     background:none;
-    /* border:none; */
-    padding:10px 15px;
     margin-bottom:0;
 }
-#com-chilipeppr-3dviewer-controlpanel {
-    padding:0 10px;
-    float:left;
-}
+
+
+
 #com-chilipeppr-gcode-list {
     /* padding-right: 10px; */
     /* z-index:5; */
@@ -111,13 +113,8 @@
     /* margin:0; */
     /* margin-bottom:10px; */
 }
-#chilipeppr-3dviewer {
-    /* z-index: -1; */
-    padding-right:10px;
-}
-#com-chilipeppr-widget-3dviewer-renderArea {
-    /* z-index:0; */
-}
+
+
 .row .widget {
     margin:0;
     padding:0;

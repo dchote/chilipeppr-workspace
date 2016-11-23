@@ -418,15 +418,6 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                             threed.init();
                             console.log("3d viewer initted");
     
-                            // Ok, do someting whacky. Try to move the 3D Viewer 
-                            // Control Panel to the center column
-                            setTimeout(function() {
-                                var element = $('#com-chilipeppr-3dviewer .panel-heading').detach();
-                                $('#com-chilipeppr-3dviewer').addClass("noheight");
-                                $('#com-chilipeppr-widget-3dviewer').addClass("nomargin");
-                                $('#com-chilipeppr-3dviewer-controlpanel').append(element);
-                            }, 10);
-    
                             // listen to resize events so we can resize our 3d viewer
                             // this was done to solve the scrollbar residue we were seeing
                             // resize this console on a browser resize

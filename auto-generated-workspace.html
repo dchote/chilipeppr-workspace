@@ -619,7 +619,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             chilipeppr.load(
                 "#com-chilipeppr-3dviewer",
                 //"http://fiddle.jshell.net/chilipeppr/y3HRF/show/light/",
-                "http://raw.githubusercontent.com/chilipeppr/widget-3dviewer/master/auto-generated-widget.html",
+                "http://raw.githubusercontent.com/dchote/widget-3dviewer-rpi/master/auto-generated-widget.html",
     
                 function() {
                     console.log("got callback done loading 3d");
@@ -785,8 +785,6 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-3 widgetx padrt">
-                        <!-- 3D Viewer. Must be loaded at top to get z-orders correct -->
-                        <div id="com-chilipeppr-3dviewer">Load 3D Viewport Here</div>
                         <!-- Workspace Hdr -->
                         <div id="com-chilipeppr-ws-gcode-hdr" class="com-chilipeppr-ws-hdr zhigh well">
                             
@@ -831,6 +829,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                     <div class="widget col-xs-6">
                         <div class="">
                             <div id="com-chilipeppr-3dviewer-controlpanel" style=""></div>
+							<div id="com-chilipeppr-3dviewer">Load 3D Viewport Here</div>
                         </div>
                     </div>
                     <div class="col-xs-3 nopadding">

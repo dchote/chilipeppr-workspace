@@ -36,97 +36,97 @@
 <body>
 
     <div id="com-chilipeppr-widget-flash-instance"></div>
+    <!--not sure which version to keep-->
 
-    <div id="com-chilipeppr-workspace-sample" class="xhidden">
-
-        <div class="container-fluid">
-            <div class="row">
-
-                <!-- Left Column -->
-                <!-- Change the width by adjusting col-md-4 to be col-md-3 for skinnier, or col-md-5 for wider -->
-                <!-- You must have all columns add up to 12 since we use bootstrap's col-md technique, i.e. col-md-2, col-md-7, col-md-3 adds to 12 -->
-                <div class="col-md-4 col-pad10">
-
-                    <div class="com-chilipeppr-ws-hdr well">
-                        
-                        Workspace - Sample
-
-                        <div class="com-chilipeppr-ws-menu pull-right">
-                            <div class="btn-group">
-                                <div class="dropdown">
-                                    <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                    <ul class="dropdown-menu dropdown-menu-ws xdropdown-menu-right" role="menu">
-                                        <li class="com-chilipeppr-ws-menu-billboard" style="width:350px;">
-                                            <!-- Billboard -->
-                                            <div class="com-chilipeppr-ws-billboard">
-                                            </div>
-                                            <!-- End Billboard -->
-                                        </li>
-
-
-                                    </ul>
+    <div id="com-chilipeppr-workspace-tinyg" class="xhidden">
+        <div id="com-chilipeppr-ws-gcode-wrapper" class="dropArea">
+            <div id="com-chilipeppr-ws-gcode-dragdropoverlay" class="hidden">
+                <div class="well">Drag and Drop Gcode Files Onto Browser Window</div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-3 widgetx padrt">
+                        <!-- 3D Viewer. Must be loaded at top to get z-orders correct -->
+                        <div id="com-chilipeppr-3dviewer">Load 3D Viewport Here</div>
+                        <!-- Workspace Hdr -->
+                        <div id="com-chilipeppr-ws-gcode-hdr" class="com-chilipeppr-ws-hdr zhigh well">
+                            
+                            <span class="workspace-title">Workspace</span>
+                            
+                            <div id="com-chilipeppr-ws-menu" class="">
+                                
+                                <div class="pull-right">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-ws" role="menu">
+                                            <li class="com-chilipeppr-ws-menu-billboard" style="width:350px;">
+                                                <!-- Billboard -->
+                                                <div class="com-chilipeppr-ws-billboard">
+                                                </div>
+                                                <!-- End Billboard -->
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
+
+                                <div id="com-chilipeppr-ws-gcode-dragdrop" style="margin-right:6px;" class=""></div>
+                                <button type="button" class="btn btn-xs btn-default shuttlexpress-button" data-container="body" data-toggle="popover" data-placement="auto" data-content="ShuttleXpress Jog Dial." data-trigger="hover" data-delay="100">ShuttleXpress</button>
+
+                                <button type="button" class="btn btn-xs btn-default touchplate-button" data-container="body" data-toggle="popover" data-placement="auto" data-content="Use a touch plate to easily figure out your Z zero of your workpiece and set it." data-trigger="hover"
+                                data-delay="100">Touch Plate</button>
+							</div>
+
                         </div>
+                        <!-- shuttlexpress -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-shuttlexpress">ShuttleXpress Here</div>
 
-                    </div>
+                        <!-- Touch Plate -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-touchplate">Touch Plate Here</div>
 
-                    <div id="mywidget1-instance">
-                        <p class="sample">Widget 1 goes here</p>
+                        <!-- Gcode List -->
+                        <div id="com-chilipeppr-gcode-list" class="zhigh">Load Gcode List Here</div>
+                        <!-- Serial In/Out Text Log-->
+                        <div id="com-chilipeppr-widget-console-instance" class="zhigh">Load Serial Port Console Here</div>
                     </div>
-                    
-                    <div id="com-chilipeppr-widget-template-instance">
-                        <p class="sample">Template Widget goes here</p>
+                    <!-- 3D Viewer -->
+                    <div class="widget col-xs-6">
+                        <div class="">
+                            <div id="com-chilipeppr-3dviewer-controlpanel" style=""></div>
+                        </div>
                     </div>
-
-                    <div id="com-chilipeppr-widget-spconsole-instance">
-                        Serial Port Console goes here.
+                    <div class="col-xs-3 nopadding">
+                        <!-- XYZ -->
+                        <div id="com-chilipeppr-xyz" class="">Load XYZ Here</div>
+                        <!-- Tinyg -->
+                        <div id="com-chilipeppr-tinyg" class="">Load TinyG Here</div>
+                        <!-- WebRTC Client -->
+                        <div id="com-chilipeppr-webrtcclient" class="hidden">Load WebRTC Client Here</div>
+                        <!-- Serial Port Selector -->
+                        <div id="com-chilipeppr-widget-spjs-instance" class="">Load Serial Port Selector Here</div>
                     </div>
-
                 </div>
-
-                <!-- Center Column -->
-                <div class="col-md-5 col-pad10">
-                    <div id="mywidget2-instance">
-                        <p class="sample" style="min-height:200px;">Widget 2 goes here</p>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="col-md-3 col-pad10">
-                    
-                    <div id="com-chilipeppr-widget-serialport-instance">
-                        Widget 3 goes here
-                    </div>
-                    
-                    <div id="mywidget3-instance">
-                        <p class="sample">Widget 3 goes here</p>
-                    </div>
-
-                </div>
-
             </div>
         </div>
     </div>
 
     <!-- Keep this div hidden so it can be cloned and used by the Javascript -->
-    <div id="com-chilipeppr-workspace-sample-billboard" class="hidden">
+    <div id="com-chilipeppr-workspace-tinyg-billboard" class="hidden">
         <div class="billboard-content">
-            <h4 class="billboard-title" style="">Sample Workspace</h4>
+            <h4 class="billboard-title" style="">TinyG Workspace</h4>
 
-            <p class="billboard-url" style=""><a href="http://chilipeppr.com/sample">chilipeppr.com/sample</a>
+            <p class="billboard-url" style=""><a href="http://chilipeppr.com/tinyg">chilipeppr.com/tinyg</a>
 
             </p>
             <div class="billboard-imgcontain" style="">
-                <a href="http://chilipeppr.com/sample">
-                    <div class="billboard-img" style="background-image: url('https://github.com/chilipeppr/workspace-sample/raw/master/billboard.png')" />
+                <a href="http://chilipeppr.com/tinyg">
+                    <div class="billboard-img" style="background-image: url('https://i2dcui.appspot.com/img/tinyg.jpg')" />
                 </a>
                 <div class="billboard-stats2">
                 </div>
 
             </div>
             <p class="billboard-desc">
-                A ChiliPeppr Workspace that lets you do stuff.
+                Daniel Chote's Raspberry Pi optimized workspace
             </p>
         </div>
     </div>

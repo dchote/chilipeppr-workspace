@@ -210,7 +210,7 @@ body.hover {
     <script type='text/javascript'>
     //<![CDATA[
 /* global cpdefine chilipeppr cprequire */
-cprequire_test(["inline:com-chilipeppr-workspace-tinyg"], function(ws) {
+cprequire_test(["inline:com-chilipeppr-workspace-dchote"], function(ws) {
 
     console.log("initting workspace");
 
@@ -244,12 +244,12 @@ cprequire_test(["inline:com-chilipeppr-workspace-tinyg"], function(ws) {
 } /*end_test*/ );
 
 // This is the main definition of your widget. Give it a unique name.
-cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function() {
+cpdefine("inline:com-chilipeppr-workspace-dchote", ["chilipeppr_ready"], function() {
     return {
         /**
          * The ID of the widget. You must define this and make it unique.
          */
-        id: "com-chilipeppr-workspace-tinyg", // Make the id the same as the cpdefine id
+        id: "com-chilipeppr-workspace-dchote", // Make the id the same as the cpdefine id
         name: "Workspace / dchote", // The descriptive name of your widget.
         desc: `This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using TinyG.`,
         url: "http://raw.githubusercontent.com/dchote/chilipeppr-workspace/master/auto-generated-workspace.html", // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
@@ -795,10 +795,9 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                                 </div>
 
                                 <div id="com-chilipeppr-ws-gcode-dragdrop" style="margin-right:6px;" class=""></div>
-                                <button type="button" class="btn btn-xs btn-default shuttlexpress-button" data-container="body" data-toggle="popover" data-placement="auto" data-content="ShuttleXpress Jog Dial." data-trigger="hover" data-delay="100">ShuttleXpress</button>
+                                <button type="button" class="btn btn-xs btn-default shuttlexpress-button">ShuttleXpress</button>
 
-                                <button type="button" class="btn btn-xs btn-default touchplate-button" data-container="body" data-toggle="popover" data-placement="auto" data-content="Use a touch plate to easily figure out your Z zero of your workpiece and set it." data-trigger="hover"
-                                data-delay="100">Touch Plate</button>
+                                <button type="button" class="btn btn-xs btn-default touchplate-button">Touch Plate</button>
 							</div>
 
                         </div>
@@ -837,13 +836,13 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
     <!-- Keep this div hidden so it can be cloned and used by the Javascript -->
     <div id="com-chilipeppr-workspace-tinyg-billboard" class="hidden">
         <div class="billboard-content">
-            <h4 class="billboard-title" style="">TinyG Workspace</h4>
+            <h4 class="billboard-title" style="">Daniel Chote's Raspberry Pi Workspace</h4>
 
-            <p class="billboard-url" style=""><a href="http://chilipeppr.com/tinyg">chilipeppr.com/tinyg</a>
+            <p class="billboard-url" style=""><a href="http://chilipeppr.com/dchote">chilipeppr.com/dchote</a>
 
             </p>
             <div class="billboard-imgcontain" style="">
-                <a href="http://chilipeppr.com/tinyg">
+                <a href="http://chilipeppr.com/dchote">
                     <div class="billboard-img" style="background-image: url('https://i2dcui.appspot.com/img/tinyg.jpg')" />
                 </a>
                 <div class="billboard-stats2">
@@ -851,7 +850,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
 
             </div>
             <p class="billboard-desc">
-                Daniel Chote's Raspberry Pi optimized workspace
+                Daniel Chote's Raspberry Pi + TinyG Optimized Workspace
             </p>
         </div>
     </div>

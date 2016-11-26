@@ -96,7 +96,10 @@ cpdefine("inline:com-chilipeppr-workspace-dchote", ["chilipeppr_ready"], functio
                 $(window).trigger('resize');
             }, 3000);
 
-
+			setTimeout(function(){
+				$('[data-toggle="popover"]').popover('destroy');
+				$('[data-trigger="hover"]').popover('destroy');
+			}, 5000);
         },
         /**
          * Returns the billboard HTML, CSS, and Javascript for this Workspace. The billboard
